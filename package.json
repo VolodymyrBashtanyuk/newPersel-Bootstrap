@@ -1,0 +1,23 @@
+{
+  "name": "new-site-onparsel",
+  "source": "src/index.html",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /new-site-onparsel/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.2",
+    "parcel": "^2.9.2",
+    "posthtml-include": "^1.7.4"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "dependencies": {
+    "sass": "^1.63.4"
+  }
+}
