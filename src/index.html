@@ -1,25 +1,63 @@
 <!doctype html>
-<html lang="en">
+<html lang="ua-UK">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Parcel</title>
+    <title>Сайт представник</title>
     <link rel="stylesheet" href="scss/styles.scss">
     <script type="module" src="js/main.js"></script>
 </head>
 
 
 <body>
-    <div class="container py-4 px-3 mx-auto">
-        <h1>Hello, Bootstrap and Parcel!</h1>
-        <button class="btn btn-primary">Primary button</button>
-        <div class="container-sm">100% wide until small breakpoint</div>
-        <div class="container-md">100% wide until medium breakpoint</div>
-        <div class="container-lg">100% wide until large breakpoint</div>
-        <div class="container-xl">100% wide until extra large breakpoint</div>
-        <div class="container-xxl">100% wide until extra extra large breakpoint</div>
-    </div>
+    <header>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">    
+                    <svg width="32" height="32">
+                        <use href="/src/image/svg/mobile.svg#icon-logo"></use>
+                    </svg>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar" data-bs-backdrop="static" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link  text-dark" aria-current="page" href="#">Головна</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="#">Про нас</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Наші послуги
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Сімейні справи</a></li>
+                                    <li><a class="dropdown-item" href="#">Виїзд за кордон</a></li>
+                                    <li><a class="dropdown-item" href="#">Тут треба ще</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus omnis iste deleniti illo illum laboriosam non modi, laudantium accusantium dolore nihil minus molestias amet deserunt asperiores recusandae veniam maxime laborum!</p>
+    </section>
+       
+   
 </body>
 
 </html>

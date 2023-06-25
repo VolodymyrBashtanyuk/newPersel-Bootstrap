@@ -1,5 +1,23 @@
+
+
+// Customize some defaults
+$body-color: #333;
+$body-bg: #fdfdfd;
+$border-radius: .4rem;
+$border-color: none;
+$border-width: 0;
+$border-style: none;
+$navbar-light-color: #fff;
+$offcanvas-vertical-height: 50vh;
+// $list-group-active-color: red;
+//  $nav-link-color: red;
+// $bs-navbar-toggler-border-radius: none;
+// $success: #7952b3;
+
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
-@import "./variables";     
-@import "./mixin"; 
 
+
+
+
+@import "./componans/header"
